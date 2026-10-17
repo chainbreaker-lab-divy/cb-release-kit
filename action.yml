@@ -1,0 +1,8 @@
+name: cb-release-kit
+description: ChainBreaker lab demo composite action.
+runs:
+  using: composite
+  steps:
+    - uses: chainbreaker-lab-divy/cb-changed-files@67f879ce918b4026fbcd76c67c8811a02aa3f6c8 # v3
+    - run: echo "release kit (demo)"
+      shell: bash
